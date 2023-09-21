@@ -1,128 +1,560 @@
-# A React Portfolio Template for GitHub
+# Dev Portfolio  [![GitHub](https://img.shields.io/github/license/mayankagarwal09/dev-portfolio?color=blue)](https://github.com/mayankagarwal09/dev-portfolio/blob/master/LICENSE.md) ![visitors](https://visitor-badge.glitch.me/badge?page_id=mayankagarwal09.dev-portfolio&color=blue)
 
-[![GitHub Repo stars](https://img.shields.io/github/stars/mshuber1981/github-react-portfolio-template?color=%2361dbfb&style=for-the-badge&logo=github)](https://github.com/mshuber1981/github-react-portfolio-template/stargazers/) [![GitHub Repo Forks](https://img.shields.io/github/forks/mshuber1981/github-react-portfolio-template?color=%2361dbfb&style=for-the-badge&logo=github&label=Forks)](https://github.com/mshuber1981/github-react-portfolio-template/network/members)
+## A minimal portfolio template for Developers!
 
-A performant, accessible, progressive React portfolio template that uses the [GitHub REST API](https://docs.github.com/en/free-pro-team@latest/rest).
+<h2 align="center">
+  <img src="https://github.com/mayankagarwal09/dev-portfolio/blob/master/images/dev-portfolio.gif" alt="Dev Portfolio" />
+  <br>
+</h2>
 
-Add your GitHub username once and all of your info will automatically be updated. Deploy to GitHub pages in a few simple steps.
+## Features
 
-## [Live Demo](https://mshuber1981.github.io/github-react-portfolio-template/#/)
+⚡️ Modern UI Design + Reveal Animations\
+⚡️ Made with React\
+⚡️ Fully Responsive\
+⚡️ Easily Customizable\
+⚡️ Well organized documentation
 
-[Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
+## Demo
 
-![Page Speed](/README_images/speed.png)
+To view the demo: **[click here](https://dev-portfolio-mayankagarwal09.vercel.app)**
 
-## Light And Dark Themes
+## Why do you need a portfolio? ☝️
 
-![Hero Light](/README_images/hero.png)
+- Professional way to showcase your work
+- Increases your visibility and online presence
+- better chance of getting work opportunity
 
-![Hero Dark](/README_images/heroDark.png)
+---
 
-### Getting Started
+## Getting Started 🚀
 
-1. [Create a repository from this template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
-2. [Clone your repository](https://developers.google.com/speed/pagespeed/insights/)
-3. Make sure [Node](https://nodejs.org/en/) is installed
-4. Open your project and install the dependencies
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-   ```bash
-   npm install
-   ```
+### Prerequisites 📋
 
-5. Navigate to the src directory and open data.js
-6. Add your GitHub username ([data.js](https://github.com/mshuber1981/github-react-portfolio-template/blob/main/src/data.js#L17) lines 17-21)
+You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [NPM](http://npmjs.com)) installed on your computer.
 
-   ```javascript
-   /* START HERE
-   ************************************************************** 
-     Add your GitHub username (string - "YourUsername") below.
-   */
-   export const githubUsername = "Your GitHub username here";
-   ```
+Also, you can use [Yarn](https://yarnpkg.com/) instead of NPM ☝️
 
-7. Start the development server to view the results
+## Setup 🔧
 
-   ```bash
-   npm start
-   ```
+From your command line, first clone Dev Portfolio:
 
-### Updating the Projects section
+```bash
+# Clone the repository
+$ git clone https://github.com/mayankagarwal09/dev-portfolio
 
-![Projects](/README_images/projects.png)
+# Move into the repository
+$ cd dev-portfolio
 
-1. Follow the instructions to update the filteredProjects array ([data.js](https://github.com/mshuber1981/github-react-portfolio-template/blob/main/src/data.js#L91) lines 91-95)
+# Remove the current origin repository
+$ git remote remove origin
+```
 
-   ```javascript
-   /* Projects
-   ************************************************************** 
-     List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
-   */
-   export const filteredProjects = ["example-1", "example-2", "example-3"];
-   ```
+After that, you can install the dependencies either using NPM or Yarn.
 
-2. Import the projects images you want to use ([data.js](https://github.com/mshuber1981/github-react-portfolio-template/blob/main/src/data.js#L7) lines 7-8) or the default image will be applied
+Using NPM: Simply run the below commands.
 
-   ```javascript
-   // Projects Images (add your images to the images directory and import below)
-   import Logo from "./images/logo.svg";
-   ```
+```bash
+# Install dependencies
+$ npm install --force
 
-3. Follow the instructions to update the projectCardImages array ([data.js](https://github.com/mshuber1981/github-react-portfolio-template/blob/main/src/data.js#L97) lines 97-103)
+# Start the development server
+$ npm start
+```
 
-   ```javascript
-   // Replace the defualt GitHub image for matching repos below (images imported above - lines 7-8)
-   export const projectCardImages = [
-     {
-       name: "example-1",
-       image: Logo,
-     },
-   ];
-   ```
+Using Yarn: Be aware of that you'll need to delete the `package-lock.json` file if exists before executing the below commands.
 
-### Updating the Contact section
+```bash
+# Install dependencies
+$ yarn
 
-![Projects](/README_images/contact.png)
+# Start the development server
+$ yarn start
+```
 
-1. The contact form uses [Formspree](https://formspree.io/), create an account and add your endpoint URL ([data.js](https://github.com/mshuber1981/github-react-portfolio-template/blob/main/src/data.js#L105) lines 105-110)
+Once your server has started, go to this url `http://localhost:3000/` to see the portfolio locally.
+The page will reload if you make edits.
 
-   ```javascript
-   /* Contact Info
-   ************************************************************** 
-     Add your formspree endpoint below.
-     https://formspree.io/
-   */
-   export const formspreeUrl = "https://formspree.io/f/YourEndpoint";
-   ```
+---
 
-### Deploy
+## Customization Instructions:
 
-A helpful guide for Create React App deployments with GitHub Pages can be found [here](https://create-react-app.dev/docs/deployment#github-pages).
+### Step 1 - DATA & IMAGES
 
-1. Update the homepage value ([package.json](https://github.com/mshuber1981/github-react-portfolio-template/blob/0133fcc02ab048fefcf73825d02385ffe27c3721/package.json#L3) line 3)
+All customizable files are inside the `public/` folder, organised mainly into `public/images/` and `public/profile/`.
+- `public/images` contains all the image assets that can be customized on website
+- `public/profile` contains all text and info inside json files that can be customized according to need
 
-   ```json
-   "homepage": "https://YourUsername.github.io/your-app/",
-   ```
+### (1) NavBar
 
-2. Run the deploy command
+- Open `public/profile/navbar.json` 
+It has 2 keys, *logo* and *sections*.
 
-   ```bash
-   npm run deploy
-   ```
+```
+{
+    "logo" : {
+        "source": "images/logo.png",
+        "height" : 45,
+        "width" : 50
+    },
+    "sections": [
+        {
+            "title": "Home",
+            "href": "/"
+        },
+        {
+            "title": "About",
+            "href": "/about"
+        },
+        {
+            "title": "Skills",
+            "href": "/skills"
+        },
+        {
+            "title": "Education",
+            "href": "/education"
+        },
+        {
+            "title": "Experience",
+            "href": "/experience"
+        },
+        {
+            "title": "Projects",
+            "href": "/projects"
+        },
+        {
+            "title": "Resume",
+            "href": "https://drive.google.com/file/d/13kaPsdMNDsM4LV9g7m5-E5PTildp-yYf/view?usp=sharing",
+            "type": "link"
+        }
+    ]
+}
+```
 
-### Customization Options
+| key | Description |
+| ----------- | ----------- |
+| logo | image you want to show as brand image on NavBar. It can be also be a simple logo with just your intitials|
+| logo.source | path to the logo image |
+| logo.height | height of logo |
+| logo.width | width of logo |
+| sections | array of sections that you want to show on Navbar as links | 
+| sections.title | title of the section | 
+| sections.href | link to that section. Same as *path* mentioned in `routes.json` | 
+| sections.type | Opens in a new tab if value is *link*. `optional` field | 
 
-Checkout the [Wiki](https://github.com/mshuber1981/github-react-portfolio-template/wiki) for additional customization options:
+### (2) Routes
+- open `public/profile/routes.json`
 
-- [Updating the Hero images](https://github.com/mshuber1981/github-react-portfolio-template/wiki/Updating-the-Hero-images)
-- [Add a custom Blog icon](https://github.com/mshuber1981/github-react-portfolio-template/wiki/Updating-the-Hero-images#add-a-custom-blog-icon)
-- [Updating the About Me section](https://github.com/mshuber1981/github-react-portfolio-template/wiki/Updating-the-About-Me-section)
-- [Updating the Skills section](https://github.com/mshuber1981/github-react-portfolio-template/wiki/Updating-the-Skills-section)
-- [Add a link to your resume](https://github.com/mshuber1981/github-react-portfolio-template/wiki/Updating-the-Skills-section#add-a-link-to-your-resume)
-- [Updating the Navbar Logo](https://github.com/mshuber1981/github-react-portfolio-template/wiki/Updating-the-Navbar-Logo)
+```
+{
+    "sections": [
+        {
+            "component": "About",
+            "path": "/about",
+            "headerTitle": "About"
+        },
+        {
+            "component": "Skills",
+            "path": "/skills",
+            "headerTitle": "Skills"
+        },
+        {
+            "component": "Education",
+            "path": "/education",
+            "headerTitle": "Education"
+        },
+        {
+            "component": "Experience",
+            "path": "/experience",
+            "headerTitle": "Experience"
+        },
+        {
+            "component": "Projects",
+            "path": "/projects",
+            "headerTitle": "Projects"
+        }
+    ]
+}
+```
 
-[Back to top :top:](#a-react-portfolio-template-for-github)
+| key | Description |
+| ----------- | ----------- |
+| sections | array of sections that you want to create route for | 
+| sections.component | name of the Component. No need to change it unless you want to customize the entire Component. | 
+| sections.path | route for the particular section. this is the path where the particular section will be accessible | 
+| sections.headerTitle | title to be shown on the top of that section page | 
 
-### License
+- For component customization, create a component of your own inside `src/components/` and use name of that component here.
 
-[MIT](https://choosealicense.com/licenses/mit/)
+### (3) Home Section
+
+#### Home Info
+- open `public/profile/home.json`
+
+```
+{
+    "name": "Your Name",
+    "roles": ["a Developer", "a Freelancer"]
+}
+```
+
+| key | Description |
+| ----------- | ----------- |
+| name | your name | 
+| roles | string array separated by `,`. mention your roles here | 
+
+#### Social Links
+- open `public/profile/social.json`
+
+```
+{
+    "social": [
+        {
+            "network" : "linkedin",
+            "href": "https://linkedin.com/"
+        },
+        {
+            "network" : "github",
+            "href": "https://github.com/"
+        },
+        {
+            "network" : "email",
+            "href": "mailto:test@test.com"
+        }
+    ]
+}
+```
+
+| key | Description |
+| ----------- | ----------- |
+| social | array of social links | 
+| social.network | network name as provided in [react-social-icons](https://jaketrent.github.io/react-social-icons/) |
+| social.href | link for particular social network |
+
+- we are using [react-social-icons](https://jaketrent.github.io/react-social-icons/) here. you can visit it to see all available social icons to use
+
+### (4) About Section
+
+- open `public/profile/about.json`
+
+```
+{
+    "about": " This is where you can describe about **yourself**.",
+    "imageSource": "images/about/profile.png"
+    
+}
+```
+
+| key | Description |
+| ----------- | ----------- |
+| about | write about yourself, your works and goals here. `markdown` supported | 
+| imageSource | path to your profile image. (recommended size 400 x 450) |
+
+### (5) Skills Section
+
+- open `public/profile/skills.json`
+
+```
+{
+    "intro": "I love to learn new things and experiment with new technologies.\nThese are some of the major languages, technologies, tools and platforms I have worked with:",
+    "skills": [{
+     
+            "title": "Languages",
+            "items" : [
+     
+                {
+                    "icon": "images/skills/java.png",
+                    "title": "Java"
+                },
+                {
+                    "icon": "images/skills/js.png",
+                    "title": "JavaScript"
+                }
+        ]},
+        {
+            "title": "Frameworks & Technologies",
+            "items" : [
+                {
+                    "icon": "images/skills/react.png",
+                    "title": "React"
+                }
+            ]
+        },
+        {
+            "title" : "Tools & Platforms",
+            "items": [
+                {
+                    "icon": "images/skills/git.png",
+                    "title": "Git"
+                }
+            ]
+    }
+]}
+```
+
+| key | Description |
+| ----------- | ----------- |
+| intro | small introduction line related to your skills. `markdown` supported | 
+| skills | array containing skills under different categories |
+| skills.title | title for category under which you want to list particular skills |
+| skills.items | array containing skills for this category |
+| skills.items.icon | path to skill logo |
+| skills.items.title | title of skill |
+
+- many pre existing skill logos are available inside `public/images/skills`.
+
+### (6) Education Section
+
+- open `public/profile/education.json`
+
+```
+{
+    "education":[
+        {
+            "title": "Jun 20XX - Jun 20YY",
+            "cardTitle": "B.Tech, Computer Science",
+            "cardSubtitle":"XYZ University, City",
+            "cardDetailedText": "CGPA - 9.5",
+            "icon" : {
+                "src": "images/education/lorem-ipsum.png"
+            }
+        },
+        {
+            "title": "Apr 20XX",
+            "cardTitle": "High School",
+            "cardSubtitle":"ABC School, City",
+            "cardDetailedText": "Marks - 95%"
+        }
+    ]
+}
+```
+
+| key | Description |
+| ----------- | ----------- |
+| education | array containing education history of a person | 
+| education.title | date range during which this education was pursued or passing date |
+| education.cardTitle | degree or course name |
+| education.cardSubtitle | school or institute name |
+| education.cardDetailedText | extra info such as marks or cgpa |
+| education.icon | icon shown on the timeline. `optional` field|
+| education.icon.src | path to icon |
+
+### (7) Experience Section
+
+- open `public/profile/experiences.json`
+
+```
+{
+    "experiences": [
+        {
+            "title": "Software Engineer",
+            "subtitle": "XYZ Ltd",
+            "workType": "Full-time",
+            "workDescription": [
+                "Integrated **2** new product.",
+                "Worked on adding **def** to **bcd**. Improved speed by 50%."
+            ],
+            "dateText": "06/20XX – Present"
+        },
+        {
+            "title": "Software Engineer",
+            "subtitle": "XYZ Ltd",
+            "workType": "Internship",
+            "workDescription": [
+                "Worked on abc."
+            ],
+            "dateText": "01/20XX – 05/20XX"
+        },
+        {
+            "title": "App Developer",
+            "subtitle": "ABC Pvt Ltd",
+            "workType": "Freelance",
+            "workDescription": [
+                "Developed the official apps for the startup for both Android and iOS using hybrid framework.",
+                "Done bcd work."
+            ],
+            "dateText": "09/20XX – 01/20YY"
+        }
+    ]
+}
+```
+
+| key | Description |
+| ----------- | ----------- |
+| experiences | array containing work experiences of a person | 
+| experiences.title | role or designation title |
+| experiences.subtitle | company or organization name. `optional` field |
+| experiences.workType | type of work experience. example - internship, freelance, full-time. `optional` field |
+| experiences.workDescription | string array to highlight specific points related to that work experiece. `markdown` supported |
+| experiences.dateText | date range text during which particular work experience was pursued. |
+
+### (8) Projects Section
+
+- open `public/profile/projects.json`
+
+```
+{
+    "projects" : [
+        {
+            "image" : "images/projects/portfolio-poster.png",
+            "title": "Dev Portfolio",
+            "bodyText": "- Developer Portfolio Website made in React\n -  Fully customisable and dynamic, easily change data and images.\n - Dark Mode Support",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/mayankagarwal09/dev-portfolio"
+                },
+                {
+                    "text": "Live",
+                    "href": "https://mayankagarwal.me"
+                }
+            ],
+            "tags" : [
+                "React",
+                "Portfolio",
+                "JavaScript"
+            ]
+        },
+        {
+            "title": "MVVM Sample App",
+            "bodyText": "- An Android App that loads data from mock API and show in both **LinearLayout** and **GridLayout RecyclerView**.\n - Offline support using **Room** DB and **NetworkBoundResource**.\n - Uses the **MVVM** architecture.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/mayankagarwal09/mvvm-sample-app"
+                }
+            ],
+            "tags" : [
+                "Kotlin",
+                "Android",
+                "MVVM",
+                "Room",
+                "Coroutines",
+                "Flow",
+                "Hilt-Dagger",
+                "NetworkBoundResource"
+            ]
+        },
+        {
+            "title": "Task Tracker",
+            "bodyText": "- A simple Task Tracker web app made with **Angular 12**.\n - Uses **mock JSON server** to get, add, delete or update tasks.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/mayankagarwal09/task-tracker-app"
+                }
+            ],
+            "tags" : [
+                "TypeScript",
+                "Angular 12",
+                "JavaScript"
+            ]
+        }
+    ]
+}
+```
+
+
+| key | Description |
+| ----------- | ----------- |
+| projects | array containing projects information |
+| projects.image | add project poster here. `optional` field. |
+| projects.title | title of the project |
+| projects.bodyText | description of project. `markdown` supported |
+| projects.links | clickable links related to the project. `optional` field |
+| projects.links.text | title of link to display |
+| projects.links.href | actual link to be redirected to on click of the button |
+| projects.tags | string array containing tags related to projects. `optional` field | 
+
+### (9) Resume Section
+
+- It is a clickable link which opens the link provided (generally drive link of resume file) in the navbar.json under Resume.
+
+
+### Step 2 - STYLES
+
+Change the color theme of the website -
+
+Go to `/src/theme/themes.js` and change the values of the required components both under lightTheme and darkTheme with your prefered HEX color.
+
+
+```theme
+//Default Values
+export const lightTheme = {
+  background: '#fff',
+  color: '#121212',
+  accentColor: '#3D84C6',
+  chronoTheme: {
+    cardBgColor: 'white',
+    cardForeColor: 'black',
+    titleColor: 'white',
+  },
+  timelineLineColor: '#ccc',
+  cardBackground: '#fff',
+  cardFooterBackground: '#f7f7f7',
+  cardBorderColor: '#00000020',
+  navbarTheme: {
+    linkColor: '#dedede',
+    linkHoverColor: '#fefefe',
+    linkActiveColor: '#fefefe',
+  },
+  bsPrimaryVariant: 'light',
+  bsSecondaryVariant: 'dark',
+  socialIconBgColor: '#121212',
+};
+
+export const darkTheme = {
+  background: '#121212',
+  color: '#eee',
+  accentColor: '#3D84C6',
+  chronoTheme: {
+    cardBgColor: '#1B1B1B',
+    cardForeColor: '#eee',
+    titleColor: 'black',
+  },
+  timelineLineColor: '#444',
+  cardBackground: '#060606',
+  cardFooterBackground: '#181818',
+  cardBorderColor: '#ffffff20',
+  navbarTheme: {
+    linkColor: '#dedede',
+    linkHoverColor: '#fefefe',
+    linkActiveColor: '#fefefe',
+  },
+  bsPrimaryVariant: 'dark',
+  bsSecondaryVariant: 'light',
+  socialIconBgColor: '#fefefe',
+};
+
+```
+
+### Step 3 - EXTRA
+
+Go to `public/index.html`. Change *title* and *logo* if you want to customize it.
+
+---
+
+## Deployment 📦
+
+Once you finish your setup. You need to put your website online!
+
+I highly recommend to use [Vercel](https://vercel.app) because it is super easy.
+
+## Notable Portfolios made using this template
+
+- [Mayank Agarwal](https://mayankagarwal.me)
+
+## Authors
+
+- **Mayank Agarwal** - [https://github.com/mayankagarwal09](https://github.com/mayankagarwal09)
+
+## Support
+
+If you find a bug, feel free to [open an issue](https://github.com/mayankagarwal09/dev-portfolio/issues) in this repository.
+
+## License 📄
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
